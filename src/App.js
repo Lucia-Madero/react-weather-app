@@ -2,6 +2,7 @@ import "./App.css";
 import Search from "./Search.js";
 import City from "./City.js";
 import TodayMore from "./TodayMore.js";
+import Calendar from "./Calendar.js";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <div className="col-3">
           {" "}
           <TodayMore />
+        </div>
+        <div className="col-3">
+          <Calendar />
         </div>
       </div>
     </div>
