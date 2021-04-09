@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Container />
@@ -27,5 +27,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
