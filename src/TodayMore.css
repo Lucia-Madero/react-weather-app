@@ -4,3 +4,7 @@
   text-align: left;
   list-style: none;
 }
+.humidity,
+.wind {
+  font-size: small;
+}

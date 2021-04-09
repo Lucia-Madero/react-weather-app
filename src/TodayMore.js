@@ -6,14 +6,12 @@ export default function TodayMore() {
     <div className="TodayMore">
       <ul className="more-info">
         <h5 id="description">Clouds</h5>
-        <small>
-          <li className="humidity" id="humidity">
-            Humidity 76%
-          </li>
-          <li className="wind" id="wind">
-            Wind 32 km/h
-          </li>
-        </small>
+        <li className="humidity" id="humidity">
+          Humidity 76%
+        </li>
+        <li className="wind" id="wind">
+          Wind 32 km/h
+        </li>
       </ul>
     </div>
   );
