@@ -12,11 +12,11 @@ export default function App() {
       <Container />
       <Search />
       <div className="row">
-        <div className="col-6">
+        <div className="col-5">
           {" "}
           <City />
         </div>
-        <div className="col-3">
+        <div className="col-4">
           {" "}
           <TodayMore />
         </div>
