@@ -1,0 +1,23 @@
+.City a {
+  text-decoration: none;
+}
+.City .image-today {
+  width: 60px;
+  padding-right: 10px;
+}
+.City .today {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.City .today h4 {
+  display: inline;
+}
+.City .units {
+  display: inline-block;
+  font-size: x-small;
+  vertical-align: text-top;
+}
+.City .units .active {
+  color: black;
+  cursor: pointer;
+}
