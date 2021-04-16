@@ -1,16 +1,34 @@
 a {
   text-decoration: none;
 }
+h4 {
+  display: inline;
+}
+.calendar {
+  margin-top: 50px;
+  margin-bottom: 1px;
+}
+.calendar-more {
+  text-align: left;
+  list-style: none;
+}
+.humidity,
+.wind {
+  font-size: small;
+  list-style: none;
+}
 .image-today {
   width: 60px;
   padding-right: 10px;
 }
+.more-info {
+  margin-top: 50px;
+  margin-bottom: 1px;
+  text-align: left;
+}
 .today {
   text-align: left;
   margin-bottom: 15px;
-}
-h4 {
-  display: inline;
 }
 .units {
   display: inline-block;
@@ -20,14 +38,4 @@ h4 {
 .units .active {
   color: black;
   cursor: pointer;
-}
-.more-info {
-  margin-top: 50px;
-  margin-bottom: 1px;
-  text-align: left;
-}
-.humidity,
-.wind {
-  font-size: small;
-  list-style: none;
 }

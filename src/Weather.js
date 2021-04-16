@@ -4,7 +4,7 @@ import "./Weather.css";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
-  const [weather, setWeather] = useState(null);
+  const [weather, setWeather] = useState({});
 
   function handleResponse(response) {
     setWeather({
@@ -22,29 +22,34 @@ export default function Weather(props) {
         <div className="col-6">
           {" "}
           <div className="today">
-            <h1 id="current-city">{weather.city}</h1>
-            <h4 id="celsius-temp">{Math.round(weather.temperature)}</h4>
+            <h1>{weather.city}</h1>
+            <h4>{Math.round(weather.temperature)}</h4>
             <div className="units">
-              <a href="noreferrer" id="celsius-link" className="active">
+              <a href="noreferrer" className="active">
                 °C
               </a>
-              |
-              <a href="noreferrer" id="faren-link">
-                °F
-              </a>
+              |<a href="noreferrer">°F</a>
             </div>
           </div>
         </div>
         <div className="col- 3">
           <div className="more-info">
             <ul>
-              <h5 id="description">{weather.description}</h5>
-              <li className="humidity" id="humidity">
-                Humidity: {weather.humidity} %
-              </li>
-              <li className="wind" id="wind">
-                Wind: {Math.round(weather.wind)} km/h
-              </li>
+              <h5>{weather.description}</h5>
+              <li className="humidity">Humidity: {weather.humidity} %</li>
+              <li className="wind">Wind: {Math.round(weather.wind)} km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div className="col-3">
+          <div className="calendar">
+            {" "}
+            <ul className="calendar-more">
+              <h5>Friday</h5>
+              <small>
+                <li>12 March</li>
+                <li>17:02</li>
+              </small>
             </ul>
           </div>
         </div>
