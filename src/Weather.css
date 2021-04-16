@@ -1,23 +1,33 @@
-.City a {
+a {
   text-decoration: none;
 }
-.City .image-today {
+.image-today {
   width: 60px;
   padding-right: 10px;
 }
-.City .today {
+.today {
   text-align: left;
   margin-bottom: 15px;
 }
-.City .today h4 {
+h4 {
   display: inline;
 }
-.City .units {
+.units {
   display: inline-block;
   font-size: x-small;
   vertical-align: text-top;
 }
-.City .units .active {
+.units .active {
   color: black;
   cursor: pointer;
+}
+.more-info {
+  margin-top: 50px;
+  margin-bottom: 1px;
+  text-align: left;
+}
+.humidity,
+.wind {
+  font-size: small;
+  list-style: none;
 }

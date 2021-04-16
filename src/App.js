@@ -1,6 +1,5 @@
 import Search from "./Search.js";
-import City from "./City.js";
-import TodayMore from "./TodayMore.js";
+import Weather from "./Weather.js";
 import Calendar from "./Calendar.js";
 import Container from "react-bootstrap/Container";
 
@@ -12,13 +11,8 @@ export default function App() {
       <Container />
       <Search />
       <div className="row">
-        <div className="col-5">
-          {" "}
-          <City />
-        </div>
-        <div className="col-4">
-          {" "}
-          <TodayMore />
+        <div className="col-9">
+          <Weather />
         </div>
         <div className="col-3">
           <Calendar />
