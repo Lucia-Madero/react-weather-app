@@ -12,7 +12,7 @@ export default function App() {
       <Search />
       <div className="row">
         <div className="col-9">
-          <Weather />
+          <Weather city="London" />
         </div>
         <div className="col-3">
           <Calendar />
