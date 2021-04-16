@@ -4,14 +4,10 @@ a {
 h4 {
   display: inline;
 }
-.calendar {
-  margin-top: 50px;
-  margin-bottom: 1px;
+li {
+  font-size: small;
 }
-.calendar-more {
-  text-align: left;
-  list-style: none;
-}
+
 .humidity,
 .wind {
   font-size: small;
@@ -33,7 +29,8 @@ h4 {
 .units {
   display: inline-block;
   font-size: x-small;
-  vertical-align: text-top;
+  vertical-align: top;
+  padding-top: 2px;
 }
 .units .active {
   color: black;

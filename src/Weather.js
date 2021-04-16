@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Calendar from "./Calendar";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -9,9 +10,10 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeather({
       city: response.data.name,
-      temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].main,
       humidity: response.data.main.humidity,
+      temperature: response.data.main.temp,
       wind: response.data.wind.speed,
     });
     setReady(true);
@@ -44,13 +46,7 @@ export default function Weather(props) {
         <div className="col-3">
           <div className="calendar">
             {" "}
-            <ul className="calendar-more">
-              <h5>Friday</h5>
-              <small>
-                <li>12 March</li>
-                <li>17:02</li>
-              </small>
-            </ul>
+            <Calendar date={weather.date} />
           </div>
         </div>
       </div>

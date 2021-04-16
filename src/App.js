@@ -10,7 +10,7 @@ export default function App() {
       <div>
         <Container />
         <Search />
-        <Weather city="Dakar" />
+        <Weather city="Brussels" />
       </div>
     </div>
   );
