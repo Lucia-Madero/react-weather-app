@@ -1,4 +1,3 @@
-import Search from "./Search.js";
 import Weather from "./Weather.js";
 import Container from "react-bootstrap/Container";
 
@@ -9,7 +8,6 @@ export default function App() {
     <div className="App">
       <div>
         <Container />
-        <Search />
         <Weather city="Brussels" />
       </div>
     </div>

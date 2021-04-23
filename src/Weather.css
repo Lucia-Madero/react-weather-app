@@ -36,3 +36,12 @@ li {
   color: black;
   cursor: pointer;
 }
+.Weather .btn-primary {
+  margin-top: 10px;
+  background: white;
+  color: black;
+  border: 1px solid #aaa69d;
+}
+.Weather .form-control {
+  border: 1px solid #aaa69d;
+}
