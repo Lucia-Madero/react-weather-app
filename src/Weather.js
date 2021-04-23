@@ -28,6 +28,7 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].main,
       humidity: response.data.main.humidity,
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
     });
@@ -56,7 +57,6 @@ export default function Weather(props) {
               Search
             </button>
           </div>
-
           <div className="col">
             <button type="button" className="btn btn-primary">
               Current
@@ -68,6 +68,7 @@ export default function Weather(props) {
             {" "}
             <div className="today">
               <h1>{weather.city}</h1>
+              <img src={weather.iconUrl} alt={weather.description} />
               <h4>{Math.round(weather.temperature)}</h4>
               <div className="units">
                 <a href="noreferrer" className="active">
