@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Calendar from "./Calendar";
 import "./Weather.css";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -67,13 +68,7 @@ export default function Weather(props) {
         <div className="row">
           <div className="col-7">
             <img src={weather.iconUrl} alt={weather.description} />
-            <div className="units">
-              <h1>{Math.round(weather.temperature)}</h1>
-              <span className="links">
-                {" "}
-                <a href="noreferrer">°C </a>|<a href="noreferrer"> °F</a>
-              </span>
-            </div>
+            <WeatherTemperature celsius={weather.temperature} />
           </div>
           <div className="col-5">
             <div className="more-info">
