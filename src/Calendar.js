@@ -40,9 +40,9 @@ export default function Calendar(props) {
   return (
     <div className="Calendar">
       <ul className="calendar-more">
-        <h5>{day}</h5>
+        <li className="day">{day} - </li>
         <li>
-          {number} {month}
+          {number} {month} -
         </li>
         <li>
           {hours}:{minutes}

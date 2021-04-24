@@ -38,7 +38,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <div className="row">
-          <div className="col-12">
+          <div className="col-9">
             <form onSubmit={handleSubmit}>
               <input
                 type="search"
@@ -49,48 +49,39 @@ export default function Weather(props) {
               />
             </form>
           </div>
-          <div className="col"></div>
-          <div className="col"></div>
-          <div className="col"></div>
-          <div className="col">
+          <div className="col-3">
             <button type="button" className="btn btn-primary">
               Search
             </button>
           </div>
-          <div className="col">
-            <button type="button" className="btn btn-primary">
-              Current
-            </button>
-          </div>
         </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-12">
             {" "}
             <div className="today">
               <h1>{weather.city}</h1>
-              <img src={weather.iconUrl} alt={weather.description} />
-              <h4>{Math.round(weather.temperature)}</h4>
-              <div className="units">
-                <a href="noreferrer" className="active">
-                  °C
-                </a>
-                |<a href="noreferrer">°F</a>
-              </div>
+              <Calendar date={weather.date} />
             </div>
           </div>
-          <div className="col- 3">
+        </div>
+        <div className="row">
+          <div className="col-7">
+            <img src={weather.iconUrl} alt={weather.description} />
+            <div className="units">
+              <h1>{Math.round(weather.temperature)}</h1>
+              <span className="links">
+                {" "}
+                <a href="noreferrer">°C </a>|<a href="noreferrer"> °F</a>
+              </span>
+            </div>
+          </div>
+          <div className="col-5">
             <div className="more-info">
               <ul>
-                <h5>{weather.description}</h5>
+                <h6>{weather.description}</h6>
                 <li className="humidity">Humidity: {weather.humidity} %</li>
                 <li className="wind">Wind: {Math.round(weather.wind)} km/h</li>
               </ul>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="calendar">
-              {" "}
-              <Calendar date={weather.date} />
             </div>
           </div>
         </div>
