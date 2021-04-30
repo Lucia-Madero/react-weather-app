@@ -10,7 +10,7 @@ li {
   font-size: small;
   list-style: none;
 }
-img {
+svg {
   width: 100px;
   display: inline;
 }
