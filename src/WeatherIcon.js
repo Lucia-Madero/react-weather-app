@@ -19,7 +19,6 @@ import {
 } from "weather-icons-react";
 
 export default function WeatherIcon(props) {
-  console.log(props.code);
   let icon = props.code;
   const codeMapping = {
     "01d": <WiDaySunny size={74} color="#000" />,

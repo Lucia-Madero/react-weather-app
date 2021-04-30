@@ -28,6 +28,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeather({
       city: response.data.name,
+      coords: response.data.coord,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].main,
       humidity: response.data.main.humidity,
@@ -82,7 +83,7 @@ export default function Weather(props) {
             </div>
           </div>
         </div>
-        <WeatherForecast />
+        <WeatherForecast coords={weather.coords} />
       </div>
     );
   } else {
