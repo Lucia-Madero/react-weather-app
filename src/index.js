@@ -10,7 +10,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Footer />
+    <div className="footer">
+      {" "}
+      <Footer />
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );

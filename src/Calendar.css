@@ -1,10 +1,12 @@
 .day {
   font-weight: 500;
 }
+
 .calendar-more {
   list-style: none;
+  margin-top: 5px;
   padding: 0;
-  margin: 0;
+  font-size: medium;
 }
 .calendar-more li {
   margin-left: 2px;

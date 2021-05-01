@@ -70,7 +70,7 @@ export default function Weather(props) {
         </div>
         <div className="row">
           <div className="col-7">
-            <WeatherIcon code={weather.icon} />
+            <WeatherIcon code={weather.icon} size={84} />
             <WeatherTemperature celsius={weather.temperature} />
           </div>
           <div className="col-5">
@@ -83,7 +83,10 @@ export default function Weather(props) {
             </div>
           </div>
         </div>
-        <WeatherForecast coords={weather.coords} />
+        <div className="forecast-row">
+          {" "}
+          <WeatherForecast coords={weather.coords} />
+        </div>
       </div>
     );
   } else {

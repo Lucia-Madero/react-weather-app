@@ -1,18 +1,26 @@
 h1 {
   display: inline;
+  margin-bottom: 10px;
 }
 li {
   font-size: small;
 }
 
+svg {
+  display: inline;
+  width: 100px;
+}
 .humidity,
 .wind {
   font-size: small;
   list-style: none;
 }
-svg {
-  width: 100px;
-  display: inline;
+.links {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: top;
+  margin-top: 20px;
 }
 .more-info ul {
   text-align: left;
@@ -26,19 +34,19 @@ svg {
   text-align: left;
   margin-bottom: 15px;
   margin-top: 15px;
+  padding-bottom: 20px;
 }
 .units {
   display: inline;
   font-size: small;
   vertical-align: middle;
-  padding-left: 5px;
+  padding-left: 10px;
 }
-.links {
+.unit-separator {
   display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
   vertical-align: top;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 3px;
 }
 .Weather .btn-primary {
   background: white;
@@ -49,10 +57,9 @@ svg {
 .Weather .form-control {
   border: 1px solid #aaa69d;
 }
-
-.unit-separator {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 20px;
-  padding: 0 3px;
+.forecast-row {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 10px 0;
 }

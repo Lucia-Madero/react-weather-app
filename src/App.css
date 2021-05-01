@@ -1,7 +1,15 @@
 .App {
-  width: 500px;
+  background: linear-gradient(
+    to top,
+    rgba(247, 251, 252, 1) 0%,
+    rgba(217, 237, 242, 1) 40%,
+    rgba(173, 217, 228, 1) 100%
+  );
   border: 1px solid #747271;
   border-radius: 6px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
   padding: 30px;
-  box-shadow: inset -80px 150px 200px -10px rgba(13, 60, 122, 0.418);
+  width: fit-content;
 }
