@@ -45,6 +45,8 @@ export default function Calendar(props) {
           {number} {month} -
         </li>
         <li>
+          {" "}
+          Last updated: {""}
           {hours}:{minutes}
         </li>
       </ul>

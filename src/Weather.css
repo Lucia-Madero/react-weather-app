@@ -1,6 +1,5 @@
 h1 {
   display: inline;
-  margin-bottom: 10px;
 }
 li {
   font-size: small;
@@ -10,24 +9,26 @@ svg {
   display: inline;
   width: 100px;
 }
+
 .humidity,
 .wind {
-  font-size: small;
   list-style: none;
+  font-size: 14px;
 }
 .links {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   vertical-align: top;
-  margin-top: 20px;
+  margin-left: 5px;
+  margin-top: 15px;
 }
 .more-info ul {
-  text-align: left;
-  padding-inline-start: 0;
   margin-top: 20px;
+  padding-inline-start: 0;
+  text-align: left;
 }
-.more-info h6 {
+.more-info h5 {
   margin-bottom: 0;
 }
 .today {
@@ -54,12 +55,14 @@ svg {
   border: 1px solid #aaa69d;
   line-height: 1.5;
 }
+
 .Weather .form-control {
   border: 1px solid #aaa69d;
 }
 .forecast-row {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
   padding: 10px 0;
 }
